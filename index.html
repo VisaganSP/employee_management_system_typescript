@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visagan's Employee Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Visagan's Employee Management System</h1>
+
+      <div id="app">
+        <div id="forms">
+          <div id="fullTimeForm">
+            <h2>Add Full-Time Employee</h2>
+            <form id="fullTimeEmployeeForm">
+              <input
+                type="text"
+                id="fullTimeName"
+                placeholder="Employee Name"
+                required
+              />
+              <input
+                type="number"
+                id="fullTimeId"
+                placeholder="Employee ID"
+                required
+              />
+              <input
+                type="text"
+                id="fullTimeDepartment"
+                placeholder="Department"
+                required
+              />
+              <input
+                type="number"
+                id="fullTimeSalary"
+                placeholder="Salary"
+                required
+              />
+              <button type="submit">Add Full-Time Employee</button>
+            </form>
+          </div>
+
+          <div id="partTimeForm">
+            <h2>Add Part-Time Employee</h2>
+            <form id="partTimeEmployeeForm">
+              <input
+                type="text"
+                id="partTimeName"
+                placeholder="Employee Name"
+                required
+              />
+              <input
+                type="number"
+                id="partTimeId"
+                placeholder="Employee ID"
+                required
+              />
+              <input
+                type="text"
+                id="partTimeDepartment"
+                placeholder="Department"
+                required
+              />
+              <input
+                type="number"
+                id="partTimeSalary"
+                placeholder="Salary"
+                required
+              />
+              <input
+                type="number"
+                id="partTimeHoursWorked"
+                placeholder="Hours Worked"
+                required
+              />
+              <button type="submit">Add Part-Time Employee</button>
+            </form>
+          </div>
+
+          <div id="contractForm">
+            <h2>Add Contract Employee</h2>
+            <form id="contractEmployeeForm">
+              <input
+                type="text"
+                id="contractName"
+                placeholder="Employee Name"
+                required
+              />
+              <input
+                type="number"
+                id="contractId"
+                placeholder="Employee ID"
+                required
+              />
+              <input
+                type="text"
+                id="contractDepartment"
+                placeholder="Department"
+                required
+              />
+              <input
+                type="number"
+                id="contractSalary"
+                placeholder="Salary"
+                required
+              />
+              <input type="date" id="contractEndDate" required />
+              <button type="submit">Add Contract Employee</button>
+            </form>
+          </div>
+        </div>
+
+        <h2>Employee List</h2>
+        <table id="employeeTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Department</th>
+              <th>Salary</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="employeeList"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="dist/script.js"></script>
+  </body>
+</html>
